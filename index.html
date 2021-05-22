@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="formatting-container">
+            <div class="subgroup">
+                <select name="fonts" id="fonts-list">
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
+                    <option value="Lora">Lora</option>
+                </select>
+
+                <div class="BUI-container">
+                    <button class="formatting-btn" value ="B">B</button>
+                    <button class="formatting-btn" value ="U">U</button>
+                    <button class="formatting-btn" value ="I">I</button>
+                </div>
+            </div>
+            <div class="subgroup">
+                <select name="size-list" id="size-list">
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="20">20</option>
+                    <option value="24">24</option>
+                    <option value="32">32</option>
+                </select>
+
+                <div class="color-container">
+                    <input type="color" id="backgroundColor" class = "colorOptions">
+                    <input type="color" id="color" class = "colorOptions">
+                </div>
+            </div>
+        </div>
+        <div class="alignment-container">
+            <div class="alignmentBtnList">
+                <button class="alignmentBtn active-btn" value="left">L</button>
+                <button class="alignmentBtn" value="center">C</button>
+                <button class="alignmentBtn" value="right">R</button>
+            </div>
+        </div>
+    </div>
+    <div class="formula-container">
+        <input type="text" class = "address-bar" readonly></input>
+        <div class="colon">:</div>
+        <input type="text" class = "formula-bar"></input>
+    </div>
+    <div class="grid">
+        <div class="corner">
+
+        </div>
+        <div class="row-alphabet-container">
+            <div class="row-alphabet"> A </div>
+            <div class="row-alphabet"> B </div>
+        </div>
+        <div class="number-column-container">
+            
+        </div>
+        <div class="cells-container">
+            <div class="row-container">
+                <div class="cell"> A </div>
+                <div class="cell"> B </div>
+                <div class="cell"> C </div>
+            </div>
+            <div class="row-container">
+                <div class="cell"> A </div>
+                <div class="cell"> B </div>
+                <div class="cell"> C </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="sheets">
+        <div class="add-Sheet-container">
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="sheet-list-container">
+            
+        </div>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
